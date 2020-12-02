@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/newsletter.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/blindguardian.bandheader_940x300.jpg"
+        alt="Blind Guardian band photo"
+      />
+      <nav class="tabs">
+        <ul>
+          <li><a href="power_metal.html">Home</a></li>
+          <li><a href="amaranthe.html">Amaranthe</a></li>
+          <li><a href="blind_guardian.html">Blind Guardian</a></li>
+          <li><a href="iron_maiden.html">Iron Maiden</a></li>
+          <li><a href="powerwolf.html">Powerwolf</a></li>
+          <li><a href="rhapsody.html">Rhapsody of Fire</a></li>
+          <li><a href="sabaton.html">Sabaton</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      To stay up to date with what's going on with Power Metal subscribe to our
+      newsletter.
+    </p>
+    <form
+      id="newsletter"
+      action="http://www.example.com/pm/newsletter"
+      method="post"
+    >
+      <fieldset id="subInfo">
+        <!--<legend>Newsletter</legend> -->
+
+        <div class="formRow">
+          <label for="name"> Name </label>
+          <input
+            name="Name"
+            id="name"
+            type="text"
+            placeholder="first and last name"
+            required
+          />
+        </div>
+
+        <div class="formRow">
+          <label for="mail"> Email </label>
+          <input name="email" id="mail" type="email" required />
+        </div>
+
+        <div class="formRow">
+          <label for="phone">Phone number</label>
+          <input
+            name="custPhone"
+            id="phone"
+            type="tel"
+            placeholder="(nnn) nnn-nnnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+          />
+        </div>
+
+        <div class="formRow">
+          <label>Receive updates via email</label>
+          <fieldset class="optGroup">
+            <label for="eYes">Yes</label>
+            <input type="radio" name="rEmail" id="eYes" value="yes" />
+            <label for="fNo">No</label>
+            <input type="radio" name="rEmail" id="eNo" value="no" />
+          </fieldset>
+        </div>
+
+        <div class="formRow">
+          <label>Receive updates via text message?</label>
+          <fieldset class="optGroup">
+            <label for="tYes">Yes</label>
+            <input type="radio" name="Text" id="tYes" value="yes" />
+            <label for="tNo">No</label>
+            <input type="radio" name="Text" id="tNo" value="no" />
+          </fieldset>
+        </div>
+
+        <div class="formRow">
+          <label>Receive updates via phone calls?</label>
+          <fieldset class="optGroup">
+            <label for="cYes">Yes</label>
+            <input type="radio" name="Call" id="cYes" value="yes" />
+            <label for="cNo">No</label>
+            <input type="radio" name="Call" id="cNo" value="no" />
+          </fieldset>
+        </div>
+
+        <input type="checkbox" name="weekly" id="weekly" value="yes" />
+        <label for="weekly">Weekly Updates</label>
+
+        <input type="checkbox" name="monthly" id="monthly" value="yes" />
+        <label for="monthly">Monthly Updates</label>
+
+        <input type="checkbox" name="yearly" id="yearly" value="yes" />
+        <label for="yearly">Yearly Updates</label>
+      </fieldset>
+    </form>
+
+    <div class="buttons">
+      <input type="submit" value="Subscribe" />
+      <input type="reset" value="Cancel" />
+    </div>
+    <footer>
+      <nav>
+        <div class="column2">
+          <ul>
+            <li><a href="power_metal.html">Home</a></li>
+            <li><a href="amaranthe.html">Amaranthe</a></li>
+            <li><a href="blind_guardian.html">Blind Guardian</a></li>
+            <li><a href="iron_maiden.html">Iron Maiden</a></li>
+          </ul>
+        </div>
+        <div class="column2">
+          <ul>
+            <li><a href="powerwolf.html">Powerwolf</a></li>
+            <li><a href="rhapsody.html">Rhapsody of Fire</a></li>
+            <li><a href="sabaton.html">Sabaton</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="column2">
+        <figure>
+          <img src="images/sabaton-logo-987660.jpg" alt="" />
+        </figure>
+      </div>
+    </footer>
+  </body>
+</html>
